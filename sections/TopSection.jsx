@@ -11,7 +11,26 @@ const TopSection = () => {
 					<Image src="/svg/logo.svg" alt="" width="95" height="24" />
 				</div>
 			</div>
-			<div className="">Search Area</div>
+			<div className="flex items-center gap-4">
+				<div className="relative w-[600px]">
+					<input
+						type="search"
+						id="search-dropdown"
+						className="block py-2 px-6 text-xl w-full rounded-[20px] border border-gray-300 overflow-hidden"
+						placeholder="Search"
+						required
+					/>
+					<button className="absolute top-0 right-0 bg-gray-100 py-2 px-6 border-r-lg rounded-r-[20px] border border-gray-300">
+						<Image
+							src="/svg/search.svg"
+							width="23"
+							height="23"
+							alt=""
+						/>
+					</button>
+				</div>
+				<Icon src="/svg/voice-search.svg" />
+			</div>
 			<div className="flex items-center gap-2">
 				<Icon src="/svg/create.svg" />
 				<Icon src="/svg/notifications.svg" />
