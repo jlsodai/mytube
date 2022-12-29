@@ -6,8 +6,8 @@ const SidebarSection = () => {
 		<div>
 			<div className="pl-4 pr-8">
 				<IconLink src="/svg/home.svg" title="Home" />
-				<div>Shorts</div>
-				<div>Subscriptions</div>
+				<IconLink src="/svg/shorts.svg" title="Shorts" />
+				<IconLink src="/svg/subscriptions.svg" title="Subscriptions" />
 			</div>
 			<hr className="my-4" />
 			<div className="pl-4 pr-8">
