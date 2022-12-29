@@ -12,7 +12,18 @@ const TopSection = () => {
 				</div>
 			</div>
 			<div className="">Search Area</div>
-			<div className="">Profile Icons section</div>
+			<div className="flex items-center gap-2">
+				<Icon src="/svg/create.svg" />
+				<Icon src="/svg/notifications.svg" />
+				<div className="bg-gray-300 w-[32px] h-[32px] rounded-full overflow-hidden ml-4">
+					<Image
+						src="https://yt3.ggpht.com/yti/AJo0G0lKS0W4MtyEjHFz-BxmniXDjhsduCoOlnyiZnrySg=s88-c-k-c0x00ffffff-no-rj-mo"
+						alt=""
+						height="32"
+						width="32"
+					/>
+				</div>
+			</div>
 		</div>
 	);
 };
