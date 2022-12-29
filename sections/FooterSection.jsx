@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const FooterSection = () => {
 	return (
-		<div className="px-8">
+		<div className="pl-4 pr-8">
 			<div className="flex gap-2 flex-wrap">
 				<Link href="#">About</Link>
 				<Link href="#">Press</Link>
