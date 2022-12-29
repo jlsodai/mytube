@@ -1,10 +1,11 @@
 import FooterSection from "./FooterSection";
-
+import Icon from "../components/Icon";
+import IconLink from "../components/IconLink";
 const SidebarSection = () => {
 	return (
 		<div>
 			<div className="pl-4 pr-8">
-				<div>Home</div>
+				<IconLink src="/svg/home.svg" title="Home" />
 				<div>Shorts</div>
 				<div>Subscriptions</div>
 			</div>
