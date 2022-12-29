@@ -7,7 +7,7 @@ const Page = () => {
 	return (
 		<div className="wrapper">
 			<TopSection />
-			<div className="grid grid-cols-[240px_1fr]">
+			<div className="grid grid-cols-[240px_1fr] mt-4">
 				<SidebarSection />
 				<ContentSection />
 			</div>
