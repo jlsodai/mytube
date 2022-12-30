@@ -1,7 +1,7 @@
 import FilterBtn from "../components/FilterBtn";
 const FilterSection = () => {
 	return (
-		<div className="flex gap-4 flex-nowrap overflow-x-auto filterSection">
+		<div className="flex gap-4 mb-8 flex-nowrap overflow-x-auto filterSection">
 			<FilterBtn title="All" active />
 			<FilterBtn title="Computer programming" />
 			<FilterBtn title="Music" />

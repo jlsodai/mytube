@@ -3,7 +3,7 @@ import Icon from "../components/Icon";
 import IconLink from "../components/IconLink";
 const SidebarSection = () => {
 	return (
-		<div>
+		<div className="sidebarSection overflow-y-auto">
 			<div className="pl-4 pr-8">
 				<IconLink
 					className="bg-slate-100"

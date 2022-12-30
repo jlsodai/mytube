@@ -4,3 +4,5 @@
 
 html { font-size: 13px; font-weight: 400; color: #0f0f0f;}
 .filterSection { max-width: calc(100dvw - 295px); }
+.videosSection { max-height: calc(100dvh - 155px); }
+.sidebarSection { max-height: calc(100dvh - 70px); }
