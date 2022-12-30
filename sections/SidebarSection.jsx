@@ -4,7 +4,7 @@ import IconLink from "../components/IconLink";
 const SidebarSection = () => {
 	return (
 		<div className="sidebarSection overflow-y-auto">
-			<div className="pl-4 pr-8">
+			<div className="pl-2 xl:pl-4 xl:pr-8 max-xl:text-xs">
 				<IconLink
 					className="bg-slate-100"
 					src="/svg/home.svg"
