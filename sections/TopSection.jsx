@@ -16,9 +16,8 @@ const TopSection = () => {
 					<input
 						type="search"
 						id="search-dropdown"
-						className="block py-2 px-6 text-xl w-full rounded-[20px] border border-gray-300 overflow-hidden"
+						className="block focus:ring-offset-0 focus:border-transparent focus:outline-none focus:border-gray-300 focus:ring-gray-300 focus:ring-1 py-2 px-6 text-xl w-full rounded-[20px] border border-gray-300 overflow-hidden"
 						placeholder="Search"
-						required
 					/>
 					<button className="absolute top-0 right-0 bg-gray-100 py-2 px-6 border-r-lg rounded-r-[20px] border border-gray-300">
 						<Image
