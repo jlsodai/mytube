@@ -1,19 +1,16 @@
 import FilterSection from "./FilterSection";
 import VideosSection from "./VideosSection";
+import ShortsSection from "./ShortsSection";
+
 const ContentSection = () => {
 	return (
 		<div className="px-8 w-full">
 			<FilterSection />
 			<VideosSection />
-			<hr className="my-16" />
-			<div className="grid grid-cols-6">
-				<div>Short</div>
-				<div>Short</div>
-				<div>Short</div>
-				<div>Short</div>
-				<div>Short</div>
-				<div>Short</div>
-			</div>
+			<hr className="mt-12 mb-8" />
+			<ShortsSection />
+			<hr className="my-12" />
+			<VideosSection />
 		</div>
 	);
 };
