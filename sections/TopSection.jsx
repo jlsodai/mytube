@@ -1,23 +1,11 @@
 import Image from "next/image";
-import React, { useContext } from "react";
+import HamburgerLogo from "../components/HamburgerLogo";
 import Icon from "../components/Icon";
-import { MenuContext } from "../app/page";
 
 const TopSection = () => {
-	const [, setMobileMenu] = useContext(MenuContext);
-
-	function toggleMobileMenu() {
-		setMobileMenu((prev) => !prev);
-	}
-
 	return (
 		<div className="flex justify-between pl-4 pr-8 py-2 items-center xl:gap-32">
-			<div className="flex items-center">
-				<Icon src="/svg/hamburger.svg" onClick={toggleMobileMenu} />
-				<div className="px-4">
-					<Image src="/svg/logo.svg" alt="" width="95" height="24" />
-				</div>
-			</div>
+			<HamburgerLogo />
 			<div className="flex items-center gap-4 grow sm:mx-24 max-sm:hidden">
 				<div className="relative w-full">
 					<input
