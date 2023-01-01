@@ -1,17 +1,30 @@
-import React from "react";
+"use client";
+
+import React, { createContext, useState } from "react";
 import SidebarSection from "../sections/SidebarSection";
 import TopSection from "../sections/TopSection";
 import ContentSection from "../sections/ContentSection";
 
+export const MenuContext = createContext();
+
 const Page = () => {
+	const [mobileMenu, setMobileMenu] = useState(false);
 	return (
-		<div className="wrapper">
-			<TopSection />
-			<div className="grid grid-cols-[auto_1fr] xl:grid-cols-[240px_1fr] mt-4">
-				<SidebarSection />
-				<ContentSection />
+		<MenuContext.Provider value={[mobileMenu, setMobileMenu]}>
+			<div className="wrapper">
+				<TopSection />
+				<div
+					className={`grid grid-cols-[auto_1fr] ${
+						mobileMenu
+							? "xl:grid-cols-[100px_1fr]"
+							: "xl:grid-cols-[240px_1fr]"
+					} mt-4`}
+				>
+					<SidebarSection />
+					<ContentSection />
+				</div>
 			</div>
-		</div>
+		</MenuContext.Provider>
 	);
 };
 
