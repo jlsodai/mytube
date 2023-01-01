@@ -1,10 +1,18 @@
 import FooterSection from "./FooterSection";
 import Icon from "../components/Icon";
 import IconLink from "../components/IconLink";
+import { useContext } from "react";
+import { MenuContext } from "../app/page";
+
 const SidebarSection = () => {
+	const [mobileMenu] = useContext(MenuContext);
 	return (
 		<div className="sidebarSection overflow-y-auto max-[790px]:hidden">
-			<div className="pl-2 xl:pl-4 xl:pr-8 max-xl:text-xs">
+			<div
+				className={`pl-2 xl:pl-4 xl:pr-8 ${
+					mobileMenu && "text-xs"
+				} max-xl:text-xs`}
+			>
 				<IconLink
 					className="bg-slate-100"
 					src="/svg/home.svg"
@@ -14,7 +22,7 @@ const SidebarSection = () => {
 				<IconLink src="/svg/shorts.svg" title="Shorts" />
 				<IconLink src="/svg/subscriptions.svg" title="Subscriptions" />
 			</div>
-			<div className="hidden xl:block">
+			<div className={`hidden ${!mobileMenu && "xl:block"}`}>
 				<hr className="my-4" />
 				<div className="pl-4 pr-8">
 					<IconLink src="/svg/library.svg" title="Library" />
