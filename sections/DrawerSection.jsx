@@ -5,7 +5,7 @@ const DrawerSection = ({ children }) => {
 	const [mobileMenu, setMobileMenu] = useContext(MenuContext);
 	return (
 		<div
-			className={`fixed overflow-hidden z-10 bg-gray-900 bg-opacity-25 inset-0 transform ease-in-out ${
+			className={`fixed xl:hidden overflow-hidden z-10 bg-gray-900 bg-opacity-25 inset-0 transform ease-in-out ${
 				mobileMenu
 					? "transition-opacity opacity-100 duration-500 translate-x-0"
 					: "transition-all delay-500 opacity-0 -translate-x-full"
