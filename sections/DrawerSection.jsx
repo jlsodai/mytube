@@ -12,7 +12,7 @@ const DrawerSection = ({ children }) => {
 			}`}
 		>
 			<div
-				className={`w-screen max-w-[240px] left-0 absolute bg-white h-full shadow-xl delay-400 duration-500 ease-in-out transition-all transform pl-4 pr-8 py-2 ${
+				className={`w-screen max-w-[240px] left-0 absolute bg-white h-full shadow-xl delay-400 duration-500 ease-in-out transition-all transform pl-4 pr-4 py-2 ${
 					mobileMenu ? "translate-x-0" : "-translate-x-full"
 				}`}
 			>
