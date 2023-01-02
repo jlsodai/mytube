@@ -6,3 +6,8 @@ html { font-size: 13px; font-weight: 400; color: #0f0f0f;}
 .filterSection { max-width: calc(100dvw - 295px); }
 .videosSection { max-height: calc(100dvh - 155px); }
 .sidebarSection { max-height: calc(100dvh - 70px); }
+.drawer .iconlink { flex-direction: row; }
+.drawer .iconlink-title { margin-left: 1.75rem; }
+.drawer .sidebarTopMenu .iconlink, .drawer .sidebarBottomMenu .iconlink {  padding-left: 0.75rem; padding-right: 0.75rem; }
+.sbm-wrap { padding-left: 1rem; padding-right: 2rem;}
+.drawer .sbm-wrap { padding-left: 0; padding-right: 0;}
