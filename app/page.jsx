@@ -29,8 +29,10 @@ const Page = () => {
 				</div>
 				<DrawerSection>
 					<HamburgerLogo />
-					<SidebarTopMenu />
-					<SidebarBottomSection />
+					<div className="drawerMenu">
+						<SidebarTopMenu />
+						<SidebarBottomSection />
+					</div>
 				</DrawerSection>
 			</div>
 		</MenuContext.Provider>
