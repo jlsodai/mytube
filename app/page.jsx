@@ -4,6 +4,8 @@ import React, { createContext, useState } from "react";
 import SidebarSection from "../sections/SidebarSection";
 import TopSection from "../sections/TopSection";
 import ContentSection from "../sections/ContentSection";
+import DrawerSection from "../sections/DrawerSection";
+import HamburgerLogo from "../components/HamburgerLogo";
 
 export const MenuContext = createContext();
 
@@ -23,6 +25,9 @@ const Page = () => {
 					<SidebarSection />
 					<ContentSection />
 				</div>
+				<DrawerSection>
+					<HamburgerLogo />
+				</DrawerSection>
 			</div>
 		</MenuContext.Provider>
 	);
