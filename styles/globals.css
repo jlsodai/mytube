@@ -11,3 +11,5 @@ html { font-size: 13px; font-weight: 400; color: #0f0f0f;}
 .drawer .sidebarTopMenu .iconlink, .drawer .sidebarBottomMenu .iconlink {  padding-left: 0.75rem; padding-right: 0.75rem; }
 .sbm-wrap { padding-left: 1rem; padding-right: 2rem;}
 .drawer .sbm-wrap { padding-left: 0; padding-right: 0;}
+.drawer .drawerMenu { overflow-y: scroll; height: calc(100dvh - 60px); margin-top: 10px;}
+.drawer .footerLinks { padding-left: 1rem; padding-right: 1rem;}
