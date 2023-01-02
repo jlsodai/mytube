@@ -6,6 +6,8 @@ import TopSection from "../sections/TopSection";
 import ContentSection from "../sections/ContentSection";
 import DrawerSection from "../sections/DrawerSection";
 import HamburgerLogo from "../components/HamburgerLogo";
+import SidebarTopMenu from "../sections/SidebarTopMenu";
+import SidebarBottomSection from "../sections/SidebarBottomSection";
 
 export const MenuContext = createContext();
 
@@ -27,6 +29,8 @@ const Page = () => {
 				</div>
 				<DrawerSection>
 					<HamburgerLogo />
+					<SidebarTopMenu />
+					<SidebarBottomSection />
 				</DrawerSection>
 			</div>
 		</MenuContext.Provider>
