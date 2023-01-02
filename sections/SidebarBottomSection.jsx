@@ -3,9 +3,9 @@ import FooterSection from "./FooterSection";
 
 const SidebarBottomSection = () => {
 	return (
-		<>
+		<div className="sidebarBottomMenu">
 			<hr className="my-4" />
-			<div className="pl-4 pr-8">
+			<div className="sbm-wrap">
 				<IconLink src="/svg/library.svg" title="Library" />
 				<IconLink src="/svg/history.svg" title="History" />
 				<IconLink src="/svg/your-videos.svg" title="Your Videos" />
@@ -13,7 +13,7 @@ const SidebarBottomSection = () => {
 				<IconLink src="/svg/liked.svg" title="liked Videos" />
 			</div>
 			<hr className="my-4" />
-			<div className="pl-4 pr-8">
+			<div className="sbm-wrap">
 				<p className="pl-4 text-xl mb-2">Explore</p>
 				<IconLink src="/svg/trending.svg" title="Trending" />
 				<IconLink src="/svg/music.svg" title="Music" />
@@ -21,7 +21,7 @@ const SidebarBottomSection = () => {
 				<IconLink src="/svg/sports.svg" title="Sports" />
 			</div>
 			<hr className="my-4" />
-			<div className="pl-4 pr-8">
+			<div className="sbm-wrap">
 				<p className="pl-4 text-xl mb-2">More from YouTube</p>
 				<IconLink
 					src="/svg/creator-studio.svg"
@@ -32,7 +32,7 @@ const SidebarBottomSection = () => {
 				<IconLink src="/svg/youtube-tv.svg" title="Youtube Tv" />
 			</div>
 			<hr className="my-4" />
-			<div className="pl-4 pr-8">
+			<div className="sbm-wrap">
 				<IconLink src="/svg/settings.svg" title="Settings" />
 				<IconLink
 					src="/svg/report-history.svg"
@@ -43,7 +43,7 @@ const SidebarBottomSection = () => {
 			</div>
 			<hr className="my-4" />
 			<FooterSection />
-		</>
+		</div>
 	);
 };
 export default SidebarBottomSection;
